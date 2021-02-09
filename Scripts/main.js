@@ -23,7 +23,8 @@ function showSlides(n) {
 }
 
 function validateForm() {
-    var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+    let format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+
     var x = document.forms["myForm"]["fname"].value;
     var y = document.forms["myForm"]["femail"].value;
     var z = document.forms["myForm"]["fmessage"].value;
@@ -31,7 +32,7 @@ function validateForm() {
     if (x == "" || y == "" || z == "") {
       alert("all fields must be filled out");
     }
-    else if (format.test(x).value || format.test(y).value){
+    else if (!format.test(x).value || !format.test(y).value){
         alert("No special characters are allowed");
     }
     else{
