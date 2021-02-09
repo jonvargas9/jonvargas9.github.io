@@ -31,7 +31,7 @@ function validateForm() {
     if (x == "" || y == "" || z == "") {
       alert("all fields must be filled out");
     }
-    else if (x.match(format) || y.match(format)){
+    else if (format.test(x).value || format.test(y).value){
         alert("No special characters are allowed");
     }
     else{
