@@ -138,6 +138,19 @@ h1{
     z-index: 0;
 }
 
+h2{
+    margin-top: 0;
+    flex-shrink: 0.2;
+    font-size-adjust: 0.2;
+    color: rgb(0, 216, 0);
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Fira Mono', monospace;
+    text-decoration: none;
+    animation: glitch 1s linear infinite;
+    z-index: 0;
+}
+
 span.text {
     display: inline-block;
     position: relative;
@@ -249,4 +262,14 @@ clip-path: polygon(0 99%, 100% 67%, 100% 100%, 0 100%);
 .profilepic{
     display: inline-block;
     border-radius: 100%;
+}
+
+.experience{
+    display: flex;
+}
+
+.exp{
+    flex-shrink: 0.2;
+    display: inline-block;
+    margin: 1vh 5vh 1vh 5vh;
 }
