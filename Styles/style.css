@@ -81,22 +81,6 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dotcontainer{
-    text-align: center;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin-top: 0;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -260,4 +244,9 @@ clip-path: polygon(0 99%, 100% 67%, 100% 100%, 0 100%);
 62%{
     transform: translate(-22px,5px) skew(-13deg); 
 }
+}
+
+.profilepic{
+    display: inline-block;
+    border-radius: 100%;
 }
