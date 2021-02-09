@@ -21,3 +21,25 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+function validateForm() {
+    var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["femail"].value;
+    var z = document.forms["myForm"]["fmessage"].value;
+
+    if (x == "" || y == "" || z == "") {
+      alert("all fields must be filled out");
+    }
+    else if (x.match(format) || y.match(format)){
+        alert("No special characters are allowed");
+    }
+    else{
+        alert("form sent!");
+        console.log(x);
+        console.log(y);
+        console.log(z);
+    }
+
+
+  }

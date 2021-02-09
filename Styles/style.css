@@ -283,3 +283,43 @@ clip-path: polygon(0 99%, 100% 67%, 100% 100%, 0 100%);
 
     max-width: 30vh;
 }
+
+
+.form{
+    display: block;
+    width: 100%;
+    align-content: center;
+}
+
+.textform{
+    font-family: 'Fira Mono', monospace;
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    color: rgb(0, 216, 0);
+    text-decoration: none;
+}
+
+.button{
+    font-family: 'Fira Mono', monospace;
+    color: black;
+    background-color: rgb(0, 216, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input{
+    display: block;
+    background-color: rgb(19, 19, 19);
+    color:rgb(0, 216, 0);
+    text-justify: auto; 
+}
+
+.message{
+    width: 50vh;
+    height: 30vh;
+    display: block;
+    background-color: rgb(19, 19, 19);
+    color:rgb(0, 216, 0);
+    text-justify: auto;
+}
