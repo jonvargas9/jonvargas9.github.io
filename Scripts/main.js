@@ -63,7 +63,7 @@ function skillshow(){
         let skillnametext = document.createTextNode(element.name);
         let xpbar = document.createElement('div');
         xpbar.classList.add('xpbar');
-        xpbar.style.width=element.value+'vh';
+        xpbar.style.width=element.value+'%';
         
         skillname.appendChild(skillnametext);
         skillbox.appendChild(skillname);
@@ -77,14 +77,5 @@ function skillshow(){
 
 }
 
-function RaptorAttack(){
-    let path = '/img/RaptorsCage/'
-    let imgs = ['1.webp','2.webp','3.webp','4.webp','5.webp','6.webp','7.webp','8.webp','9.webp']
-    let wrapper = document.createElement('div');
-    let raptor = document.createElement('img');
-    let chosenRaptor = Math.floor(Math.random()*imgs.length);
-    $('.raptor').append("<img src='"+path+imgs[chosenRaptor]+"'>").hide().fadeIn(20);
-
-}
 
 document.onload = skillshow();
