@@ -11,9 +11,6 @@ body{
     margin: 0;
 }
 
-
-
-
 .mySlides {
     display: none;
     align-items: center;
@@ -134,6 +131,41 @@ img {vertical-align: middle;}
 
 
 
+
+
+section{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 10vh 20vh 10vh 20vh;
+    height: auto;
+    overflow: hidden;
+}
+
+h1{
+    margin-top: 0;
+    flex-shrink: 0.2;
+    font-size-adjust: 0.2;
+    color: rgb(0, 216, 0);
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Fira Mono', monospace;
+    text-decoration: none;
+    animation: glitch 1s linear infinite;
+    z-index: 0;
+}
+
+span.text {
+    display: inline-block;
+    position: relative;
+    color: rgb(0, 216, 0);
+    width: 90vh;
+    vertical-align: middle;
+    font-family: 'Fira Mono', monospace;
+    font-style: normal;
+    text-align: justify;
+
+}
+
 .navbar{
     overflow: hidden;
     position: fixed;
@@ -170,4 +202,62 @@ img {vertical-align: middle;}
     color: rgb(0, 216, 0);
     text-decoration: none;
 
+}
+
+
+
+@keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(2deg);
+    }
+    4%,20%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(-2deg); 
+    }
+}
+
+h1:before,
+h1:after{
+/* content: attr(title); */
+content: attr(h1);
+position: absolute;
+left: 0;
+}
+
+h1:before{
+animation: glitchTop 0.5s linear infinite;
+clip-path: polygon(0 0, 100% 0, 100% 33%, 0 99%);
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 0 99%);
+}
+
+@keyframes glitchTop{
+2%,64%{
+    transform: translate(2px,-2px);
+}
+40%,60%{
+    transform: translate(-2px,2px);
+}
+62%{
+    transform: translate(13px,-22px) skew(-13deg); 
+}
+}
+
+h1:after{
+animation: glitchBotom 0.5s linear infinite;
+clip-path: polygon(0 99%, 100% 67%, 100% 100%, 0 100%);
+-webkit-clip-path: polygon(0 67%, 100% 80%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+2%,64%{
+    transform: translate(-2px,0);
+}
+4%,60%{
+    transform: translate(-2px,0);
+}
+62%{
+    transform: translate(-22px,5px) skew(-13deg); 
+}
 }
