@@ -39,7 +39,7 @@ function validateForm() {
     if (x == "" || y == "" || z == "") {
       alert("all fields must be filled out");
     }
-    else if (!format.test(x).value || !format.test(y).value){
+    else if (format.test(x).value || format.test(y).value){
         alert("No special characters are allowed");
     }
     else{
