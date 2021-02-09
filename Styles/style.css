@@ -163,6 +163,11 @@ span.text {
 
 }
 
+.linktext{
+
+    color: rgb(0, 216, 0);
+}
+
 .navbar{
     overflow: hidden;
     position: fixed;
@@ -264,12 +269,17 @@ clip-path: polygon(0 99%, 100% 67%, 100% 100%, 0 100%);
     border-radius: 100%;
 }
 
-.experience{
-    display: flex;
+.Experience{
+    width: 100%;
+    display: inline-table;
+    align-content: center;
 }
 
 .exp{
-    flex-shrink: 0.2;
-    display: inline-block;
-    margin: 1vh 5vh 1vh 5vh;
+    margin: 10vh auto 5vh auto;
+}
+
+.placeholder{
+
+    max-width: 30vh;
 }
